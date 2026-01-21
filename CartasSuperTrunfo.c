@@ -4,66 +4,69 @@
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
-int main() {#include <stdio.h>
-
 int main() {
 
-printf (" CARTAS SUPER TRUNFO \n")
+    // ================== DECLARAÇÃO DAS VARIÁVEIS ==================
+    char estado1, estado2;
+    char codigo1[10], codigo2[10];
+    char cidade1[30], cidade2[30];
 
-//declaração de variáveis para a primeira carta
-char estado1, codigo[10], cidade[20];
-int populacao1, ponto_turistico1;
-float area1, pib1;
+    int populacao1, populacao2;
+    int pontos1, pontos2;
 
-//Declaração das variáveis para a segunda carta
-char estado2, codigo[10], cidade[20];
-int populacao2, ponto_turistico2;
-float area2, pib2;
- 
-//Cadastro da primeira carta
-printf("---CADASTRO DA PRIMEIRA CARTA---\n")
+    float area1, area2;
+    float pib1, pib2;
 
-printf("Digite o estado (A-H):  ");
-scanf("%n", codigo1);
+    int opcao;
 
-printf("digite o código da carta (ex; A01): ");
-scanf("%s", codigo1);
+    printf("====== SUPER TRUNFO - CIDADES ======\n");
 
-printf(" digite o nome da cidade: ")
-scanf("%n", cidade2);
+    // ================== CADASTRO CARTA 1 ==================
+    printf("\n--- CADASTRO DA CARTA 1 ---\n");
 
-printf("digite a população: ");
-scanf("%s", &populacao1);
+    printf("Estado (A-H): ");
+    scanf(" %c", &estado1);
 
-printf("digite a área (em km²): ");
-scanf("%f", &area1);
+    printf("Codigo da carta: ");
+    scanf("%s", codigo1);
 
-printf("digite o pib (em milhões): ");
-scanf("%f", &pib1);
+    printf("Cidade: ");
+    scanf("%s", cidade1);
 
-printf("digite o ponto turístico : ");
-scanf("%c", &ponto_turistico1);
+    printf("Populacao: ");
+    scanf("%d", &populacao1);
 
-//Exibição das informações das cartas
-printf("CARTA 1\n");
-printf("Estado: %s\n", estado1);
-printf("Código: %s\n", codigo1);
-printf("Cidade; %s\n", cidade1);
-printf("População; %d\n", populacao1);
-printf("área; %.2f km²\n", area1);
-printf("PIB; %.2f milhões\n", pib1);
-printf("Ponto Turístico; %d\n", ponto_turistico1);
-//Exibição da segunda carta
-printf("CARTA 2\n");
-printf("Estado: %s\n", estado2);
-printf("Código: %s\n", codigo2);
-printf("Cidade; %s\n", cidade2);
-printf("População; %d\n", populacao2);
-printf("área; %.2f km²\n", area2);
-printf("PIB; %.2f milhões\n", pib2);
-printf("Ponto Turístico; %d\n", ponto_turistico2);
+    printf("Area (km²): ");
+    scanf("%f", &area1);
 
+    printf("PIB (milhoes): ");
+    scanf("%f", &pib1);
 
+    printf("Pontos turisticos: ");
+    scanf("%d", &pontos1);
 
+    // ================== CADASTRO CARTA 2 ==================
+    printf("\n--- CADASTRO DA CARTA 2 ---\n");
+
+    printf("Estado (A-H): ");
+    scanf(" %c", &estado2);
+
+    printf("Codigo da carta: ");
+    scanf("%s", codigo2);
+
+    printf("Cidade: ");
+    scanf("%s", cidade2);
+
+    printf("Populacao: ");
+    scanf("%d", &populacao2);
+
+    printf("Area (km²): ");
+    scanf("%f", &area2);
+
+    printf("PIB (milhoes): ");
+    scanf("%f", &pib2);
+
+    printf("Pontos turisticos: ");
+    scanf("%d", &pontos2);
 return 0;
 }
