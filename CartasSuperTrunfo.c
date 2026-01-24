@@ -5,12 +5,6 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-// Desafio Super Trunfo - Países
-// Aluno: Eduardo Pereira Magalhães
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
-
-   
     // Área para definição das variáveis 
     // para armazenar as propriedades das cidades
     
@@ -22,7 +16,10 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
-   
+    //inclusao abaixo, modo aventureiro
+    float desnsidadePopulacional1;
+    float pibPerCapta1;
+
     // Variáveis para a Carta 02
     char estado2;
     char codigo2[20];
@@ -31,6 +28,9 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
+    //inclusao abaixo, modo aventureiro
+    float desnsidadePopulacional2;
+    float pibPerCapta2;
 
    
     // Área para entrada de dados
@@ -57,6 +57,14 @@ int main() {
     printf("Digite o Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
+    //inclusao, desafio aventureiro
+    printf("Densidade Populacional: ");
+    scanf("%d\n", &populacao1 / &area1, populacao1, area1);
+
+    printf("Pib per Capta: ");
+    scanf("%d\n", &pib1 / &populacao1, pib1, populacao1);
+
+
     printf("------------------------------------\n");
 
     // --- LEITURA DE DADOS: CARTA 02 ---
@@ -74,7 +82,7 @@ int main() {
     printf("Digite a População: ");
     scanf("%d", &populacao2);
 
-    printf("Digite a Área (em km²): ");
+     printf("Digite a Área (em km²): ");
     scanf("%f", &area2);
 
     printf("Digite o PIB (em bilhões): ");
@@ -110,5 +118,12 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+
+
+
+    
+
+
+
 return 0;
 }
