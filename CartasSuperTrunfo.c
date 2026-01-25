@@ -1,3 +1,5 @@
+//Aluno: Eduardo Pereira Magalhães
+
 #include <stdio.h>
 
 int main() {
