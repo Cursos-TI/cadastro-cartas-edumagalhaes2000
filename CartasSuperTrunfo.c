@@ -154,5 +154,14 @@ int main() {
     printf("Super Poder: Carta 1 venceu (%d)\n",
            superPoder1 > superPoder2);
 
+     //Implementação de logica em if - if else
+     printf("Carta vencedora: \n");
+
+     if( populacao1 > populacao2 ){
+      printf("Carta 1 venceu! \n");
+     } else {
+     printf("Carta 2 venceu! \n");
+     }
+
     return 0;
 }
